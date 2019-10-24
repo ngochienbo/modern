@@ -44,26 +44,41 @@ body {
   Explanation Section
 -----------------------------------------*/
 .explanation {
+  background-color: #0d2c40;
+  color: #ffffff;
 }
 
 /*-----------------------------------------
   Participation Section
 -----------------------------------------*/
 .participation {
+  background-color: #f6efe5;
 }
 
 /*-----------------------------------------
   Benefits Section
 -----------------------------------------*/
 .benefits {
+  padding-top: 7em;
+  background: no-repeat rgba(0, 188, 217, 0.8) url(i/icon_circles.svg) center top/32%;
 }
 
 /*-----------------------------------------
   Requirements Section
 -----------------------------------------*/
 .requirements {
+  background-color: #f6efe5;
 }
 
 /*-----------------------------------------
   Footer Section
 -----------------------------------------*/
+.main footer a,
+.main footer a:hover {
+  border: initial;
+}
+
+footer {
+  background-color: #f6efe5;
+  padding: 1em 0.9em 1.1em;
+}
