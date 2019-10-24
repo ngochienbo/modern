@@ -11,7 +11,33 @@ body {
 /*-----------------------------------------
   Main Section
 -----------------------------------------*/
-.main {
+.main,
+.main a:link,
+.main a:visited {
+  color: #0d2c40
+}
+
+.main h3 {
+  font-size: 1.5em;
+}
+
+.main a {
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+  transition: all 0.2s ease-out;
+}
+
+.main a:hover {
+  color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  padding: 0.7em 1em 1em;
+  line-height: 1.5;
 }
 
 /*-----------------------------------------
