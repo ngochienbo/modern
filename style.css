@@ -114,13 +114,18 @@ h2 {
     header {
         background-color: #c879b2;
         width: 40%;
-        height: 30em;
+        height: 50em;
+        /* display: block;
+        float: left; */
     }
 
     h2 {
         width: 20%;
         position: absolute;
         left: 20%; 
+        height: inherit;
+        padding-top: 6.5em;
+        background-size: 100%;
     }
 
 }
