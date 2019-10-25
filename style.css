@@ -15,3 +15,78 @@ html * {
 body {
     margin: 0;
 }
+
+/*-----------------------------------------
+  Main Section
+-----------------------------------------*/
+.main,
+.main a:link,
+.main a:visited {
+  color: #0d2c40
+}
+
+.main h3 {
+  font-size: 1.5em;
+}
+
+.main a {
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+  transition: all 0.2s ease-out;
+}
+
+.main a:hover {
+  color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  padding: 0.7em 1em 1em;
+  line-height: 1.5;
+}
+
+/*-----------------------------------------
+  Explanation Section
+-----------------------------------------*/
+.explanation {
+  background-color: #0d2c40;
+  color: #ffffff;
+}
+
+/*-----------------------------------------
+  Participation Section
+-----------------------------------------*/
+.participation {
+  background-color: #f6efe5;
+}
+
+/*-----------------------------------------
+  Benefits Section
+-----------------------------------------*/
+.benefits {
+  padding-top: 7em;
+  background: no-repeat rgba(0, 188, 217, 0.8) url(i/icon_circles.svg) center top/32%;
+}
+
+/*-----------------------------------------
+  Requirements Section
+-----------------------------------------*/
+.requirements {
+  background-color: #f6efe5;
+}
+
+/*-----------------------------------------
+  Footer Section
+-----------------------------------------*/
+.main footer a,
+.main footer a:hover {
+  border: initial;
+}
+
+footer {
+  background-color: #f6efe5;
+  padding: 1em 0.9em 1.1em;
+}
