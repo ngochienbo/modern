@@ -248,6 +248,101 @@ footer {
   padding: 1em 0.9em 1.1em;
 }
 
+/*-----------------------------------------
+  Sidebar Section
+-----------------------------------------*/
+.sidebar {
+  color: #ffffff;
+}
+
+/*-----------------------------------------
+  Design Selection Section
+-----------------------------------------*/
+.design-selection {
+}
+
+.select {
+  display: block;
+  background-color: #c879b2;
+  margin: 0;
+  padding: 2.5em 1.2em 1.3em;
+  font-size: 1.5em;
+}
+
+.design-selection ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.design-selection ul a {
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.design-selection a:link,
+.design-selection a:visited {
+  color: #ffffff;
+}
+
+/* Background colors and padding for each item in the list */
+
+.design-selection ul li {
+  padding: 5em 1em 2em;
+}
+
+.design-selection ul > li:nth-child(4n+1) {
+  background-color: #0d2c40;
+}
+
+.design-selection ul > li:nth-child(2n) {
+  background-color: #f15a30;
+}
+
+.design-selection ul > li:nth-child(3),
+.design-selection ul > li:nth-child(7) {
+  background-color: #31c5da;
+}
+
+/* Add numbers to each list item */
+
+.design-selection ul > li::before {
+  display: block;
+  font-size: 2.5em;
+}
+
+.design-selection ul > li:nth-child(1)::before {
+  content: "1";
+}
+
+.design-selection ul > li:nth-child(2)::before {
+  content: "2";
+}
+
+.design-selection ul > li:nth-child(3)::before {
+  content: "3";
+}
+
+.design-selection ul > li:nth-child(4)::before {
+  content: "4";
+}
+
+.design-selection ul > li:nth-child(5)::before {
+  content: "5";
+}
+
+.design-selection ul > li:nth-child(6)::before {
+  content: "6";
+}
+
+.design-selection ul > li:nth-child(7)::before {
+  content: "7";
+}
+
+.design-selection ul > li:nth-child(8)::before {
+  content: "8";
+}
+
 /*********************************
 Link anchors / abbreviations
 *********************************/
