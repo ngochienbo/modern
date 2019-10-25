@@ -122,4 +122,34 @@ h2 {
         float: left;
     }
 }
+
+/*********************************
+Summary and preamble
+*********************************/
+.summary {
+    position: relative;
+    background: #c879b2 url(i/icons_3_pack.svg) left bottom / 100% auto no-repeat border-box;
+    padding: 2em 3em 36% 1em;
+    height: 100%;
+    //overflow: auto;
+}
+
+.summary p {
+    text-align: justify;
+    padding-bottom: 1.3em;
+    position: relative;
+    top: 10%;
+    width: 100%;
+}
+
+.preamble {
+    position: relative;
+    color: initial;
+    background: #f6efe5;
+    //margin-top: 10%;
+}
+
+.preamble {
+    padding: 1.5em 1.5em 1.5em 1em;
+}
 
