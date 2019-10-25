@@ -426,6 +426,16 @@ Archives & Resources
 
 }
 
+@media (min-width: 70em) {
+    .design-archives,
+    .zen-resources {
+        width: 20%;
+        position: relative;
+        left: 60%;
+        padding-top: 4.5em;
+    }
+}
+
 @media (min-width: 33em){}
 @media (min-width: 53em){}
 @media (min-width: 70em){}
