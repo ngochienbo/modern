@@ -152,4 +152,76 @@ Summary and preamble
 .preamble {
     padding: 1.5em 1.5em 1.5em 1em;
 }
-
+/*********************************
+Link anchors / abbreviations
+*********************************/
+
+.main a:link {
+    text-decoration: none;
+    position: relative;
+    transition: opacity 0.2s;
+}
+
+abbr {
+    text-decoration: none;
+    position: relative;
+}
+
+.summary a::after,
+.main a::after,
+abbr::after {
+    content: "";
+    position: absolute;
+    left:0;
+    right: 0;
+}
+
+.main a::after {
+    border-bottom: 1px solid black;
+    bottom: -0.25em;
+    transition: opacity 0.2s;
+}
+
+.main a:link:hover,
+.main a:hover::after {
+    opacity: 0.5;
+}
+
+abbr::after {
+    border-bottom: 1.5px dotted black;
+    bottom: 0em;
+}
+
+.intro h2 abbr::after {
+    border-bottom: 3px dotted black;
+    bottom: 0em;
+}
+
+.summary a:link {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s,
+                opacity 0.2s;
+}
+
+.summary a::after {
+    border-bottom: 1px solid white;
+    bottom: -0.25em;
+    transition: color 0.2s,
+                opacity 0.2s;
+}
+
+.intro h2 abbr:after,
+.summary a::after,
+.summary abbr::after {
+    border-bottom-color: white;
+}
+
+.summary a:link:hover {
+    color: black;
+    opacity: 0.4;
+}
+
+.summary a:hover::after {
+    border-bottom-color: black;
+    opacity: 0.8;
