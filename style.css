@@ -224,6 +224,9 @@ abbr::after {
 
 .summary a:hover::after {
     border-bottom-color: black;
+    opacity: 0.8;
+}
+
 /*********************************
 Archives & Resources
 *********************************/
