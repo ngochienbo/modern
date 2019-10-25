@@ -12,6 +12,114 @@ html * {
     box-sizing: border-box;
 }
 
-body {
+body,
+h1,
+h2,
+.preamble,
+.preamble h3,
+.summary p,
+.main h3,
+.design-archives h3,
+.zen-resources h3,
+ul{
     margin: 0;
 }
+
+p,
+li {
+    font-size: 0.95em;
+    line-height: 1.8em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+.preamble,
+.summary,
+.summary a,
+.explanation,
+.explanation a {
+    color: white;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+a {
+    color: black;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+/*********************************
+Header
+*********************************/
+header {
+    background: #f15a30;
+    height: 20em;
+}
+
+h1 {
+    display: inline-block;
+    writing-mode: vertical-lr;  
+    transform: rotate(180deg); 
+    font-size: 0.9em;
+    position: relative;
+    top: 3em;
+    left: 1em;
+}
+
+h2 {
+    display: inline-block;
+    background: #0d2c40 url(i/icon_star.svg) left bottom / 49% auto no-repeat;
+    height: 10.52em;
+    width: 66.6%;
+    float: right;
+    font-size: 1.9em;
+    padding-top: 1.3em;
+    padding-left: 0.5em;
+    line-height: 1.3em;
+}
+
+@media (min-width: 33em){
+
+}
+
+@media (min-width: 53em){
+    header {
+        height: 27em;
+    }
+
+    h2 {
+        height: 11.8em;
+        font-size: 2.3em;
+    }
+}
+
+@media (min-width: 70em) {
+    header {
+        background-color: #c879b2;
+    }
+
+    h2 {
+        width: 20%;
+        float: left;
+        position: absolute;
+        left: 20%; 
+    }
+
+    .summary {
+        float: left;
+    }
+}
+
