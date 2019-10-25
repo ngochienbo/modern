@@ -224,4 +224,89 @@ abbr::after {
 
 .summary a:hover::after {
     border-bottom-color: black;
-    opacity: 0.8;
+/*********************************
+Archives & Resources
+*********************************/
+
+.design-archives {
+    background: linear-gradient(rgba(0, 188, 217, 0.8), rgba(0, 188, 217, 0.8)), url(i/p.gif);
+    padding: 5em 0 0 1em;
+}
+
+.zen-resources {
+    background: url(i/icon_circles.svg) bottom center / 35% auto no-repeat, linear-gradient(rgba(0, 188, 217, 0.8), rgba(0, 188, 217, 0.8)), url(i/p.gif);
+    padding: 5em 0 10.5em 1em;
+}
+
+.design-archives h3,
+.zen-resources h3 {
+    color: white;
+    padding-bottom: 1.2em;
+}
+
+.design-archives li,
+.zen-resources li {
+    list-style-type: none;
+}
+
+.design-archives a:link,
+.zen-resources a:link {
+    text-decoration: none;
+    position: relative;
+    transition: opacity 0.2s;
+}
+
+.design-archives a::after,
+.zen-resources a::after {
+    content: "";
+    position: absolute;
+    left:0;
+    right: 0;
+    border-bottom: 1px solid black;
+    bottom: -0.25em;
+    transition: opacity 0.2s;
+}
+
+.design-archives a:link:hover,
+.zen-resources a:link:hover,
+.design-archives a:hover::after,
+.zen-resources a:hover::after {
+    opacity: 0.5;
+}
+
+@media (min-width: 53em){
+    .sidebar {
+        background: #c879b2;
+    }
+    
+    .design-archives,
+    .zen-resources {
+        width: 25%;
+        position: relative;
+        left: 50%;
+        padding-top: 4.5em;
+    }
+
+    .zen-resources {
+        background-size: 100%;
+        padding-bottom: 23em;
+    }
+
+    .design-archives h3,
+    .zen-resources h3 {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        position: relative;
+        right: 3.5em;
+        top: 4.8em;
+    }
+
+    .zen-resources h3 {
+        top: 5.7em;
+    }
+
+}
+
+@media (min-width: 33em){}
+@media (min-width: 53em){}
+@media (min-width: 70em){}
