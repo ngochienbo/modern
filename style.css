@@ -12,6 +12,301 @@ html * {
     box-sizing: border-box;
 }
 
-body {
+body,
+h1,
+h2,
+.preamble,
+.preamble h3,
+.summary p,
+.main h3,
+.design-archives h3,
+.zen-resources h3,
+ul{
     margin: 0;
 }
+
+p,
+li {
+    font-size: 0.95em;
+    line-height: 1.8em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+.preamble,
+.summary,
+.summary a,
+.explanation,
+.explanation a {
+    color: white;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+a {
+    color: black;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+/*********************************
+Header
+*********************************/
+header {
+    background: #f15a30;
+    height: 20em;
+}
+
+h1 {
+    display: inline-block;
+    writing-mode: vertical-lr;  
+    transform: rotate(180deg); 
+    font-size: 0.9em;
+    position: relative;
+    top: 3em;
+    left: 1em;
+}
+
+h2 {
+    display: inline-block;
+    background: #0d2c40 url(i/icon_star.svg) left bottom / 49% auto no-repeat;
+    height: 10.52em;
+    width: 66.6%;
+    float: right;
+    font-size: 1.9em;
+    padding-top: 1.3em;
+    padding-left: 0.5em;
+    line-height: 1.3em;
+}
+
+@media (min-width: 33em){
+
+}
+
+@media (min-width: 53em){
+    header {
+        height: 27em;
+    }
+
+    h2 {
+        height: 11.8em;
+        font-size: 2.3em;
+    }
+}
+
+@media (min-width: 70em) {
+    header {
+        background-color: #c879b2;
+    }
+
+    h2 {
+        width: 20%;
+        float: left;
+        position: absolute;
+        left: 20%; 
+    }
+
+    .summary {
+        float: left;
+    }
+}
+
+/*********************************
+Summary and preamble
+*********************************/
+.summary {
+    position: relative;
+    background: #c879b2 url(i/icons_3_pack.svg) left bottom / 100% auto no-repeat border-box;
+    padding: 2em 3em 36% 1em;
+    height: 100%;
+    //overflow: auto;
+}
+
+.summary p {
+    text-align: justify;
+    padding-bottom: 1.3em;
+    position: relative;
+    top: 10%;
+    width: 100%;
+}
+
+.preamble {
+    position: relative;
+    color: initial;
+    background: #f6efe5;
+    //margin-top: 10%;
+}
+
+.preamble {
+    padding: 1.5em 1.5em 1.5em 1em;
+}
+/*********************************
+Link anchors / abbreviations
+*********************************/
+
+.main a:link {
+    text-decoration: none;
+    position: relative;
+    transition: opacity 0.2s;
+}
+
+abbr {
+    text-decoration: none;
+    position: relative;
+}
+
+.summary a::after,
+.main a::after,
+abbr::after {
+    content: "";
+    position: absolute;
+    left:0;
+    right: 0;
+}
+
+.main a::after {
+    border-bottom: 1px solid black;
+    bottom: -0.25em;
+    transition: opacity 0.2s;
+}
+
+.main a:link:hover,
+.main a:hover::after {
+    opacity: 0.5;
+}
+
+abbr::after {
+    border-bottom: 1.5px dotted black;
+    bottom: 0em;
+}
+
+.intro h2 abbr::after {
+    border-bottom: 3px dotted black;
+    bottom: 0em;
+}
+
+.summary a:link {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s,
+                opacity 0.2s;
+}
+
+.summary a::after {
+    border-bottom: 1px solid white;
+    bottom: -0.25em;
+    transition: color 0.2s,
+                opacity 0.2s;
+}
+
+.intro h2 abbr:after,
+.summary a::after,
+.summary abbr::after {
+    border-bottom-color: white;
+}
+
+.summary a:link:hover {
+    color: black;
+    opacity: 0.4;
+}
+
+.summary a:hover::after {
+    border-bottom-color: black;
+/*********************************
+Archives & Resources
+*********************************/
+
+.design-archives {
+    background: linear-gradient(rgba(0, 188, 217, 0.8), rgba(0, 188, 217, 0.8)), url(i/p.gif);
+    padding: 5em 0 0 1em;
+}
+
+.zen-resources {
+    background: url(i/icon_circles.svg) bottom center / 35% auto no-repeat, linear-gradient(rgba(0, 188, 217, 0.8), rgba(0, 188, 217, 0.8)), url(i/p.gif);
+    padding: 5em 0 10.5em 1em;
+}
+
+.design-archives h3,
+.zen-resources h3 {
+    color: white;
+    padding-bottom: 1.2em;
+}
+
+.design-archives li,
+.zen-resources li {
+    list-style-type: none;
+}
+
+.design-archives a:link,
+.zen-resources a:link {
+    text-decoration: none;
+    position: relative;
+    transition: opacity 0.2s;
+}
+
+.design-archives a::after,
+.zen-resources a::after {
+    content: "";
+    position: absolute;
+    left:0;
+    right: 0;
+    border-bottom: 1px solid black;
+    bottom: -0.25em;
+    transition: opacity 0.2s;
+}
+
+.design-archives a:link:hover,
+.zen-resources a:link:hover,
+.design-archives a:hover::after,
+.zen-resources a:hover::after {
+    opacity: 0.5;
+}
+
+@media (min-width: 53em){
+    .sidebar {
+        background: #c879b2;
+    }
+    
+    .design-archives,
+    .zen-resources {
+        width: 25%;
+        position: relative;
+        left: 50%;
+        padding-top: 4.5em;
+    }
+
+    .zen-resources {
+        background-size: 100%;
+        padding-bottom: 23em;
+    }
+
+    .design-archives h3,
+    .zen-resources h3 {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        position: relative;
+        right: 3.5em;
+        top: 4.8em;
+    }
+
+    .zen-resources h3 {
+        top: 5.7em;
+    }
+
+}
+
+@media (min-width: 33em){}
+@media (min-width: 53em){}
+@media (min-width: 70em){}
