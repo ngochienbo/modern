@@ -226,6 +226,22 @@ Summary and preamble
   line-height: 1.5;
 }
 
+@media (min-width: 53em) {
+  .main {
+    position: relative;
+    background: url(i/mid_century_1.jpg) no-repeat top center/88em;
+    padding: 66em 0 0;
+  }
+}
+
+@media (min-width: 70em) {
+  .main {
+    position: relative;
+    background: #f6efe5 url(i/mid_century_1.jpg) no-repeat top center/110em;
+    padding: 122em 0 0;
+  }
+}
+
 /*-----------------------------------------
   Explanation Section
 -----------------------------------------*/
