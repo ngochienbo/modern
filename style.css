@@ -516,6 +516,69 @@ footer {
   content: "8";
 }
 
+@media (min-width: 53em) {
+  .select {
+    text-align: right;
+    padding-top: 15em;
+    position: relative;
+  }
+
+  .select::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0d2c40;
+  }
+
+  .design-selection ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .design-selection ul > li {
+    flex: 1 1 25%;
+    padding-top: 12em;
+  }
+
+  .design-selection ul > li a {
+    display: block;
+  }
+
+  .design-selection ul > li::before {
+    font-size: 5.5em;
+    transform: translateY(-0.2em);
+  }
+}
+
+@media (min-width: 70em) {
+  .wrapper {
+    position: relative;
+    padding-top: 23em;
+  }
+
+  .select {
+    position: absolute;
+    width: 20%;
+    left: 0;
+    padding: 5em 1em 1em 0;
+  }
+
+  .select::before {
+    width: 100%;
+    height: 23rem; /* Had to switch to rem because parent is an h3 */
+                   /* with a different font size. Same below. */
+    top: -23rem;
+    left: 100%;
+  }
+
+  .design-selection ul {
+    width: 80%;
+    margin-left: 20%;
+  }
+
 /*********************************
 Link anchors / abbreviations
 *********************************/
