@@ -250,6 +250,31 @@ Summary and preamble
   color: #ffffff;
 }
 
+@media (min-width: 53em) {
+  .explanation {
+    position: absolute;
+    top: 18em;
+    width: 66%;
+    padding: 3em 7em 3em 6em;
+    background: #0d2c40 url(i/icon_half.svg) no-repeat right center/40%;
+  }
+
+  .explanation h3 {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 8em;
+    left: -4em;
+  }
+}
+
+@media (min-width: 70em) {
+  .explanation {
+    top: 18em;
+    width: 40%;
+    padding: 3em 7em 3em 6em;
+  }
+}
+
 /*-----------------------------------------
   Participation Section
 -----------------------------------------*/
