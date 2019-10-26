@@ -90,6 +90,7 @@ h2 {
     padding-top: 1.3em;
     padding-left: 0.5em;
     line-height: 1.3em;
+    float: right;
 }
 
 @media (min-width: 33em){
