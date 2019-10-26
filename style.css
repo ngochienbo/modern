@@ -69,6 +69,7 @@ header {
     background: #f15a30;
     height: 20em;
     position: static;
+    transition: all 0.4s ease;
 }
 
 h1 {
@@ -191,6 +192,7 @@ Summary and preamble
         position: absolute;
         left: 60%;
         top: -3.25%;
+        z-index: 2;
     }
 }
 
@@ -211,6 +213,12 @@ Summary and preamble
   text-decoration: none;
   border-bottom: 1px solid #000000;
   transition: all 0.2s ease-out;
+}
+
+/* Turn off underline border in the main section, since another method is */
+/* used to draw the underline */
+.main a::after {
+  display: none;
 }
 
 .main a:hover {
@@ -659,12 +667,12 @@ Archives & Resources
 *********************************/
 
 .design-archives {
-    background: linear-gradient(rgba(0, 188, 217, 0.8), rgba(0, 188, 217, 0.8)), url(i/p.gif);
+  background: linear-gradient(#31c5da, #31c5da), url(i/p.gif);
     padding: 5em 0 0 1em;
 }
 
 .zen-resources {
-    background: url(i/icon_circles.svg) bottom center / 35% auto no-repeat, linear-gradient(rgba(0, 188, 217, 0.8), rgba(0, 188, 217, 0.8)), url(i/p.gif);
+  background: url(i/icon_circles.svg) bottom center / 35% auto no-repeat, linear-gradient(#31c5da, #31c5da), url(i/p.gif);
     padding: 5em 0 10.5em 1em;
 }
 
