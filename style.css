@@ -334,6 +334,60 @@ Summary and preamble
   background-color: #f6efe5;
 }
 
+@media (min-width: 53em) {
+  .requirements {
+    position: relative;
+    padding: 1em 1em 1em 27%;
+    height: 42em;
+  }
+
+  .requirements::before {
+    content: "";
+    position: absolute;
+    background: url(i/mid_century_2.jpg) no-repeat -14em top/55em;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .requirements h3 {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 1.5em;
+    left: -0.3em;
+    font-size: 3em;
+  }
+
+  .requirements p {
+    position: relative;
+    margin: 0 0 1em;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 70em) {
+  .requirements {
+    column-count: 2;
+    column-gap: 4em;
+    padding: 1em 1em 1em 42%;
+  }
+
+  .requirements::before {
+    width: 36%;
+    left: 4%;
+    background-position: left center;
+  }
+
+  .requirements h3 {
+    left: 4.5em;
+  }
+
+  .requirements p {
+  }
+
+}
+
 /*-----------------------------------------
   Footer Section
 -----------------------------------------*/
