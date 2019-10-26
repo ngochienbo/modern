@@ -282,6 +282,22 @@ Summary and preamble
   background-color: #f6efe5;
 }
 
+@media (min-width: 53em) {
+  .participation {
+    padding: 2em 35% 12em 1em;
+  }
+}
+
+@media (min-width: 70em) {
+  .participation {
+    position: absolute;
+    width: 40%;
+    top: 76em;
+    left: 20%;
+    padding: 2em 1em 1em;
+  }
+}
+
 /*-----------------------------------------
   Benefits Section
 -----------------------------------------*/
